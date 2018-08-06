@@ -1,7 +1,7 @@
 require 'api_version_constraint'
 
 Rails.application.routes.draw do
-  devise_for :users
+  #devise_for :users
 
   # usado para confiugrar subdominios
     namespace :api, defaults: {format: :json}, constraints: {subdomain: 'api'}, path: "/" do
